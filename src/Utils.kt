@@ -90,6 +90,8 @@ fun printAsGrid(
  */
 fun String.splitToInts(): List<Int> = this.trim().split("\\s+".toRegex()).map { it.toInt() }
 
+fun String.splitToInts(delimiter: String): List<Int> = this.trim().split(delimiter).map { it.toInt() }
+
 /**
  * Splits a string by any number of whitespace between the numbers and then converts them.
  * Also handles whitespace at the beginning and end.
